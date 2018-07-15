@@ -1,0 +1,50 @@
+action_factory: null
+action_names:
+- utter_greet
+- utter_goodbye
+- utter_ask_username
+- utter_ask_accountnumber
+- action_accountnumber
+actions:
+- utter_greet
+- utter_goodbye
+- utter_ask_username
+- utter_ask_accountnumber
+- actions.ActionAccountNumber
+config:
+  store_entities_as_slots: true
+entities:
+- accountnumber
+- username
+intents:
+- greet
+- goodbye
+- inform
+- ask_username
+slots:
+  accountnumber:
+    initial_value: null
+    type: rasa_core.slots.TextSlot
+  username:
+    initial_value: null
+    type: rasa_core.slots.TextSlot
+templates:
+  utter_ask_accountnumber:
+  - text: I will check the system for your account number. Just a moment...
+  - text: I will ask backoffice to get your account number. Be patient...
+  utter_ask_username:
+  - text: For saftey issues, I need your first name
+  - text: Mhm, maybe I don't know you. Please enter your first name
+  - text: Ups, I forgot your name, could you please enter for first name
+  utter_goodbye:
+  - text: It was a pleasure to meet you. Good bye
+  - text: See you later
+  - text: Hope I could help you. Bye
+  - text: Bye bye
+  - text: ' Cu u later aligator'
+  utter_greet:
+  - text: Hi, I-'m CoCO your virtual operator. What can I do for your?
+  - text: Nice to meet you. Here is CoCO your virtal operator. What are your interested
+      in?
+  - text: CoCO your sophisticated virtual operator. What would you like to do?
+topics: []

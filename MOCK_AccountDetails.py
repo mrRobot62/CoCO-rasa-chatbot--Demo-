@@ -26,7 +26,7 @@ def MOCK_AccountDetails(name, numberOfAccounts, numberOfSavingAccounts):
                       "Created" : "10.01.2010",
                       "Balance" : 34566.00,
                       "Debit" : 10000,
-                      "Currency" : "€"
+                      "Currency" : "Euro"
                       },
                       {
                       "Number": "0987654321" ,
@@ -34,7 +34,7 @@ def MOCK_AccountDetails(name, numberOfAccounts, numberOfSavingAccounts):
                       "Created" : "03.05.2011",
                       "Balance" : 23053.35,
                       "Debit" : 15000,
-                      "Currency" : "€"
+                      "Currency" : "Euro"
                       }      
                       ],
                     "Saving_account"   : [{
@@ -43,7 +43,7 @@ def MOCK_AccountDetails(name, numberOfAccounts, numberOfSavingAccounts):
                       "Created" : "10.01.2010",
                       "Balance" : 15000.00,
                       "Debit" : 0,
-                      "Currency" : "€"
+                      "Currency" : "Euro"
                     }]},
                   "DayOfBirth": "04.MAR.1973",
                   "CityOfBirth" : "Keras",
@@ -77,7 +77,7 @@ def MOCK_AccountDetails(name, numberOfAccounts, numberOfSavingAccounts):
               "Created" : "10.01.2010",
               "Balance" : round(uniform((maxDebit*-1),15000), 2),
               "Debit" : maxDebit,
-              "Currency" : "€"            
+              "Currency" : "Euro"            
             } 
         accounts.append(s)
     ##
@@ -102,7 +102,7 @@ def MOCK_AccountDetails(name, numberOfAccounts, numberOfSavingAccounts):
               "Created" : "10.01.2010",
               "Balance" : round(uniform(0,100000), 2),
               "Debit" : 0,
-              "Currency" : "€"            
+              "Currency" : "Euro"            
             } 
         accounts.append(s)
     ##

@@ -3,7 +3,7 @@
     "common_examples": [
       {
         "intent": "greet",
-        "text": "Hello"
+        "text": "hi"
       },
       {
         "intent": "greet",
@@ -11,11 +11,55 @@
       },
       {
         "intent": "greet",
-        "text": "Hi"
+        "text": "hi ho"
       },
       {
         "intent": "greet",
-        "text": "Hey"
+        "text": "begin"
+      },
+      {
+        "intent": "greet",
+        "text": "hello"
+      },
+      {
+        "intent": "greet",
+        "text": "start"
+      },
+      {
+        "intent": "user_need_help",
+        "entities": [
+          {
+            "start": 7,
+            "end": 11,
+            "value": "help",
+            "entity": "user_need_help"
+          }
+        ],
+        "text": "i need help"
+      },
+      {
+        "intent": "user_need_help",
+        "entities": [
+          {
+            "start": 0,
+            "end": 4,
+            "value": "help",
+            "entity": "user_need_help"
+          }
+        ],
+        "text": "help"
+      },
+      {
+        "intent": "getusername",
+        "entities": [
+          {
+            "start": 0,
+            "end": 5,
+            "value": "myname",
+            "entity": "username"
+          }
+        ],
+        "text": "myname"
       },
       {
         "intent": "goodbye",
@@ -23,135 +67,15 @@
       },
       {
         "intent": "goodbye",
-        "text": "goodbye"
-      },
-      {
-        "intent": "goodbye",
         "text": "good bye"
       },
       {
         "intent": "goodbye",
-        "text": "ciao"
+        "text": "goodbye"
       },
       {
         "intent": "goodbye",
-        "text": "tschau"
-      },
-      {
-        "intent": "goodbye",
-        "text": "cu"
-      },
-      {
-        "intent": "accountnumber",
-        "entities": [
-          {
-            "start": 11,
-            "end": 25,
-            "value": "account number",
-            "entity": "accountnumber"
-          }
-        ],
-        "text": "what is my account number?"
-      },
-      {
-        "intent": "accountnumber",
-        "entities": [
-          {
-            "start": 11,
-            "end": 25,
-            "value": "account number",
-            "entity": "accountnumber"
-          }
-        ],
-        "text": "give me my account number"
-      },
-      {
-        "intent": "accountnumber",
-        "entities": [
-          {
-            "start": 15,
-            "end": 29,
-            "value": "account number",
-            "entity": "accountnumber"
-          }
-        ],
-        "text": "do you know my account number?"
-      },
-      {
-        "intent": "accountnumber",
-        "entities": [
-          {
-            "start": 8,
-            "end": 22,
-            "value": "account number",
-            "entity": "accountnumber"
-          }
-        ],
-        "text": "send my account number"
-      },
-      {
-        "intent": "accountnumber",
-        "entities": [
-          {
-            "start": 7,
-            "end": 20,
-            "value": "account number",
-            "entity": "accountnumber"
-          }
-        ],
-        "text": "get my account number"
-      },
-      {
-        "intent": "ask_username",
-        "text": "What's you name. I need it for legitimation. I need only your first name"
-      },
-      {
-        "intent": "ask_username",
-        "text": "For legitimation I need you first name"
-      },
-      {
-        "intent": "ask_username",
-        "text": "Could you please give me you first name"
-      },
-      {
-        "intent": "ask_username",
-        "text": "Hu, I don't know you. Could you please give me your first name?"
-      },
-      {
-        "intent": "username",
-        "entities": [
-          {
-            "start": 11,
-            "end": 16,
-            "value": "Greta",
-            "entity": "username"
-          }
-        ],
-        "text": "My name is Greta"
-      },
-      {
-        "intent": "username",
-        "entities": [
-          {
-            "start": 16,
-            "end": 21,
-            "value": "Frank",
-            "entity": "username"
-          }
-        ],
-        "text": "here is my name Frank"
-      },
-      {
-        "intent": "username",
-        "entities": [
-          {
-            "start": 0,
-            "end": 7,
-            "value": "my_name",
-            "entity": "username"
-          }
-        ],
-        "text": "my_name"
+        "text": "end"
       }
     ],
     "regex_features": [],

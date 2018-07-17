@@ -2,18 +2,17 @@
   "states": [
     "intent_greet",
     "intent_goodbye",
-    "intent_inform",
-    "intent_ask_username",
-    "entity_accountnumber",
+    "intent_user_need_help",
+    "intent_getusername",
+    "entity_user_need_help",
     "entity_username",
-    "slot_accountnumber_0",
     "slot_username_0",
     "prev_action_listen",
     "prev_action_restart",
+    "prev_utter_user_authorization",
     "prev_utter_greet",
     "prev_utter_goodbye",
-    "prev_utter_ask_username",
-    "prev_utter_ask_accountnumber",
-    "prev_action_accountnumber"
+    "prev_action_help",
+    "prev_utter_greet_user"
   ]
 }
